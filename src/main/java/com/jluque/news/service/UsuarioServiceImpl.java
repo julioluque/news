@@ -18,9 +18,8 @@ public class UsuarioServiceImpl implements IUsuarioService {
 	}
 
 	@Override
-	public Usuario getById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+	public Usuario findById(int id) {
+		return repository.findById(id).get();
 	}
 
 	@Override
@@ -29,14 +28,8 @@ public class UsuarioServiceImpl implements IUsuarioService {
 	}
 
 	@Override
-	public void update(Usuario usuario) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
 	public void delete(int id) {
-		// TODO Auto-generated method stub
+		repository.deleteById(id);
 
 	}
 
