@@ -45,7 +45,8 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.18</version><!--$NO-MVN-MAN-VER$ -->
+<!-- 			<version>8.0.18</version>$NO-MVN-MAN-VER$ -->
+			<version>8.0.21</version><!--$NO-MVN-MAN-VER$ -->
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
 		<dependency>
@@ -61,6 +62,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+<!-- 					<finalName>news-docker-spring-boot-mysql</finalName> -->
+					<finalName>news</finalName>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
