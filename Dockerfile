@@ -1,15 +1,9 @@
 # CONTAINER DEPLOYED OK -----------------------------------
-#
-# FROM openjdk:8
-# ADD target/news-docker-spring-boot-mysql.jar news-docker-spring-boot-mysql.jar
-# EXPOSE 8085
-# ENTRYPOINT ["java", "-jar", "news-docker-spring-boot-mysql.jar"]
-
 
 FROM openjdk:8
 
-ADD target/news.jar news.jar
+ADD target/users-mysql.jar users-mysql.jar
 
-EXPOSE 8086
+EXPOSE 8087
 
-ENTRYPOINT ["java", "-jar", "news.jar"]
+ENTRYPOINT ["java", "-jar", "users-mysql.jar"]

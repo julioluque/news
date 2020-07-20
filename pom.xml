@@ -63,8 +63,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-<!-- 					<finalName>news-docker-spring-boot-mysql</finalName> -->
-					<finalName>news</finalName>
+					<finalName>users-mysql</finalName>
 				</configuration>
 			</plugin>
 		</plugins>
